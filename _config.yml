@@ -33,6 +33,15 @@ theme: minima
 plugins:
   - jekyll-feed
 
+
+plainwhite:
+  name: 奇伢云存储
+  tagline: qiyaqingli
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    github: liqingqiya
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
