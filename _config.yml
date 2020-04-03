@@ -36,11 +36,16 @@ plugins:
 
 plainwhite:
   name: 奇伢云存储
-  tagline: qiyaqingli
+  tagline: qiya.qingli
   date_format: "%b %-d, %Y"
 
   social_links:
     github: liqingqiya
+
+  navigation:
+    - title: 公众号
+      url: "/my-work"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
