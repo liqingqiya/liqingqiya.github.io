@@ -44,7 +44,7 @@ plainwhite:
 
   navigation:
     - title: 公众号
-      url: "/my-work"
+      url: "/about"
 
 
 # Exclude from processing.
