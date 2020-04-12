@@ -194,5 +194,6 @@ s3fs qiya-bucket-1 /data/s3fs -o passwd_file=/root/.passwd-s3fs -o url=http://s3
 代码链接地址：https://github.com/s3fs-fuse/s3fs-fuse
 
 ---
+
 关注我，获取更多干货
 ![qrcode_for_gh_77bf4987514d_430.jpg](https://upload-images.jianshu.io/upload_images/14414032-75b2140619d8e1fb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
