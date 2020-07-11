@@ -17,6 +17,6 @@ permalink: /about/
 
 奇伢云存储
 
-![微信公众号](/images/wechat_public_no.png)
+![微信公众号](https://upload-images.jianshu.io/upload_images/14414032-1c5fafa645a08a53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 有意向的可通过微信公众号留言交流。谢谢大家。
