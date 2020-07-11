@@ -1,3 +1,12 @@
+---
+
+layout: post
+title:  "groupcache 一个没有删除的缓存"
+date:   2020-5-11 1:44:09 +0800
+categories: groupcache golang 缓存
+
+---
+
  *   groupcache
     *   groupcache 架构设计
         *   API 接口特点
