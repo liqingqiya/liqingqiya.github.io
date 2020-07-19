@@ -1,11 +1,11 @@
-* * *
+---
 
 layout: post
 title: "golang 调试高阶技巧"
 date: 2020-6-03 1:44:09 +0800
 categories: golang GC 垃圾回收
 
-* * *
+---
 
 *   golang 高阶调试
     *   Golang tools
