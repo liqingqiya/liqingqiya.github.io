@@ -604,4 +604,4 @@ go build -gcflags "-N -l"
 ---
 坚持思考，方向比努力更重要。微信公众号关注我：奇伢云存储
 
-![关注我公众号](https://github.com/liqingqiya/liqingqiya.github.io/blob/master/images/wechat_public_no.png)
+![关注我公众号](/images/wechat_public_no.png)
