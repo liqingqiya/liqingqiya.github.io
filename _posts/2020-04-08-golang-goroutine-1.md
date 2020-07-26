@@ -57,7 +57,7 @@ Goroutine思考几个问题
 
 每个协程任务都是一样的，不存在主次，都可以相互切换。这类调度类型看着美观，但是实现起来会非常复杂，如果加上一些协程锁，异步io切换逻辑之后，而且极容易出错。不容易实现时序的串行化。 
 
-![image](https://upload-images.jianshu.io/upload_images/14414032-9b1806614617d792?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-04-08-golang-goroutine-1/1240.png)
 
 **非对称的调度方式**
 
@@ -73,7 +73,7 @@ Goroutine思考几个问题
 
 2.  存在串行逻辑的时候，必须保证严格的串行时序（这个会在协程锁的实现里讲） 
 
-![image](https://upload-images.jianshu.io/upload_images/14414032-a34f0297163a33d7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-04-08-golang-goroutine-1/1241.png)
 
 有哪些常见的协程实现？
 
@@ -99,7 +99,7 @@ int  setcontext(const ucontext_t *ucp);
 
 怎么实现一个简易的协程调度？
 
-![image](https://upload-images.jianshu.io/upload_images/14414032-6972caebbe651c00?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-04-08-golang-goroutine-1/1242.png)
 
 上图是一个比较完整的切换示意图：
 
@@ -138,7 +138,7 @@ int  setcontext(const ucontext_t *ucp);
 前面复习完了协程通用的知识，下面终于到了重点戏码——Golang的协程是怎么回事？ （旁白：协程实现很简单，就四板斧：任务，队列，切换上下文的手段，代码执行者）
 **G-P-M的数据结构**
 
-![image](https://upload-images.jianshu.io/upload_images/14414032-18911edf1edda19e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-04-08-golang-goroutine-1/1243.png)
 
 作为Go的最大宣传特点，来看看goroutine的协程实现。goroutine本质上和上面我实现的协程是一样的。但是由于做了一些层次抽象，更具灵活性。
 
@@ -183,7 +183,6 @@ int  setcontext(const ucontext_t *ucp);
 
 4.  汇编引导结束，之后就由golang的函数main入口运行 
 
-![image.gif](https://upload-images.jianshu.io/upload_images/14414032-41538b29c629d1e1.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 初始化的时候，会创建几个线程（M）
 
@@ -195,7 +194,7 @@ int  setcontext(const ucontext_t *ucp);
 
 ## Goroutine调度
 
-![image](https://upload-images.jianshu.io/upload_images/14414032-c84d3f612263907a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-04-08-golang-goroutine-1/1244.png)
 
 创建goroutine
 
@@ -224,7 +223,7 @@ type funcval struct {
 }
 ```
 
-![image](https://upload-images.jianshu.io/upload_images/14414032-417cae1005a47e8a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-04-08-golang-goroutine-1/1245.png)
 
 注意：特意标红的地方，这里是goroutine调度的一个关键。在goroutine执行完fn函数之后，在执行ret汇编指令的时候，会把这个地址取出来放到指令计数器（pc）去执行，而这个地址恰好是goexit的地址。这个赋值就是在newproc的时候赋值的。执行了goexit，你才能切回调度里（非对称中心化调度）。
 
@@ -313,7 +312,7 @@ execute -> gogo
 
 其中gogo的代码 
 
-![image](https://upload-images.jianshu.io/upload_images/14414032-cba90f0cb55b737e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-04-08-golang-goroutine-1/1246.png)
 
 goroutine的抢占调度
 
@@ -336,8 +335,6 @@ goroutine的主动切出
 2.  gopark/goparkunlock ： 保存上下文，直接切出
 
 3.  goready ： 唤醒G（把G重新入队） 
-
-![image](https://upload-images.jianshu.io/upload_images/14414032-b790d6ee0f0f378e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ---
 

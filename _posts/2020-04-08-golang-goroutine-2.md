@@ -49,7 +49,7 @@ sync.Mutex.Unlock
 2.  取出这个锁内部等待队列的一个元素（g）
 3.  调用goready唤醒goroutine，投入队列中，等待执行 
 
-![image](https://upload-images.jianshu.io/upload_images/14414032-fbf9f8294deccf06?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-04-08-golang-goroutine-2/1240.png)
 
 现在就以A, B任务同时处理Z来举例：
 
@@ -127,8 +127,6 @@ golang支持了一个G-M锁定的功能，通过lockOSThread和unlockOSThread来
 那么这种情况，虽然没有完全阻塞死P任务的执行，但是代价非常大，而且可能会导致M的数量一直飙升。就算没有这些极限情况，IO的并发能力相较于aio也是不行的。（旁白：Golang能切走的当前只有网络IO，磁盘io走的是系统调用，协程切不走）
 
 当前net库是已经实现了底层的patch，aio还没有实现关键还是aio的复杂性导致的。 其实很多的工程实践是通过libaio来实现磁盘io的异步，配合协程一起使用。
-
-![image](https://upload-images.jianshu.io/upload_images/14414032-15903a282b39e694?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * * *
 
