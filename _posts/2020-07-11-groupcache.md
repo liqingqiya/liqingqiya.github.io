@@ -191,7 +191,7 @@ groupcache 有一个热点数据自动扩展机制用来解决这个问题，针
 
 架构图如下：
 
-![image.png](https://upload-images.jianshu.io/upload_images/14414032-7761d86ec5eab17e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-07-11-groupcache/4DBC7239-A2BF-423B-986E-892419FFDCCB.png)
 
 ---
 坚持思考，方向比努力更重要。微信公众号关注我：奇伢云存储
