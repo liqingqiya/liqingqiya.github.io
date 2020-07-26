@@ -91,7 +91,7 @@ go tool nm ./example
 
 第一列是地址，第二列是类型，第三列是符号：
 
-[图片上传失败...(image-1c9b7a-1594910164396)]
+![62F0D280-DB8E-4BBD-9573-C31CA9E84BB0](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-07-16-golang-debug/62F0D280-DB8E-4BBD-9573-C31CA9E84BB0.png)
 
 ### compile
 
@@ -497,7 +497,9 @@ dlv core ./example core.277282
 
 gdb 对 golang 的调试支持是通过一个 python 脚本文件 `src/runtime/runtime-gdb.py` 来扩展的，所以功能非常有限。gdb 只能做到最基本的变量打印，却理解不了 golang 的一些特殊类型，比如 channel，map，slice 等，gdb 原生是无法调适 goroutine 协程的，因为这个是用户态的调度单位，gdb 只能理解线程。所以只能通过 python 脚本的扩展，把协程结构按照链表输出出来，支持的命令：
 
-[图片上传失败...(image-c8e3d1-1594910164394)]
+![gdb image1](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-07-16-golang-debug/Image.png)
+
+
 
 gdb当前只支持6个命令：
 
@@ -537,9 +539,9 @@ gdb当前只支持6个命令：
 
 有时候不知道怎么断点函数：可以通过nm查询下，然后再断点，就一定能断到了。
 
-[图片上传失败...(image-f2bd4b-1594910164394)]
+![5064A4C4-C937-4B2A-9F52-6DBA7B3A8E92](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-07-16-golang-debug/5064A4C4-C937-4B2A-9F52-6DBA7B3A8E92.png)
 
-[图片上传失败...(image-e94d0b-1594910164394)]
+![D7D7B504-79AD-4091-AF71-2DB0C830DA8D](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-07-16-golang-debug/D7D7B504-79AD-4091-AF71-2DB0C830DA8D.png)
 
 ### 不知道调用上下文？
 
