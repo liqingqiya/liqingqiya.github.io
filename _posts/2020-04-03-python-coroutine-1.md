@@ -143,3 +143,9 @@ foreach_exec_task () {
 
 
 上面讲了一遍协程的基本原理，下一篇正式讲我们的内部实践。
+
+---
+
+
+
+![关注我公众号](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/wechat_public_no.png)

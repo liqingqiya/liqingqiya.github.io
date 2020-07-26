@@ -91,5 +91,8 @@ KODO
 $\color{#ea4335}{坚持思考，方向比努力更重要。}$ 
 **关注公众号：奇伢云存储**
 
-![关注我，获取更多干货](https://upload-images.jianshu.io/upload_images/14414032-60dcb5bfc0c60873.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+---
+
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/wechat_public_no.png)
+
 

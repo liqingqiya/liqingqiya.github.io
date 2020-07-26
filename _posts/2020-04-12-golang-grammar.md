@@ -247,4 +247,5 @@ func main () {
 
 坚持思考，方向比努力更重要。关注我：奇伢云存储
 
-![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/14414032-c52f648f2972bef7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/wechat_public_no.png)
+

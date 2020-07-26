@@ -339,7 +339,11 @@ goroutine的主动切出
 
 ![image](https://upload-images.jianshu.io/upload_images/14414032-b790d6ee0f0f378e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-* * *
+---
 
-坚持思考，方向比努力更重要。**关注我：奇伢云存储**![image](https://upload-images.jianshu.io/upload_images/14414032-8fef00a8d717bd8f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+坚持思考，方向比努力更重要。
+**关注我：奇伢云存储**
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/wechat_public_no.png)
+
+
 

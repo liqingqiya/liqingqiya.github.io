@@ -123,3 +123,6 @@ gevent.joinall([A])
 1. 使用协程方案来提高并发吞吐处理能力最核心是因为：业务的代码过于复杂，直接异步化不现实。非侵入式的改动，即不改动业务代码，就可以将架构变成全程异步非阻塞的架构。从而大大提高并发能力
 2. gevent刚好提供了一个比较好的非对称调度框架，和patch方案，但是要小心使用
 
+---
+
+![关注我公众号](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/wechat_public_no.png)

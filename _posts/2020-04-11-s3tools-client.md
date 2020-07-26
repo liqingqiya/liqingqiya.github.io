@@ -196,4 +196,4 @@ s3fs qiya-bucket-1 /data/s3fs -o passwd_file=/root/.passwd-s3fs -o url=http://s3
 ---
 
 关注我，获取更多干货
-![qrcode_for_gh_77bf4987514d_430.jpg](https://upload-images.jianshu.io/upload_images/14414032-75b2140619d8e1fb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/wechat_public_no.png)
