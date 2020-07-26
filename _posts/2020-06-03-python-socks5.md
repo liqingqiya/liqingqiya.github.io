@@ -44,11 +44,11 @@ print s.recv(4096)
 
 更多的场景是，我业务代理已经有了，配置什么的都是直接的 target ，这样直接通信。线上跑当然没问题，但是如果我是在本地电脑上调试，如果网络不能直接连通，只能通过跳板机，那 Python 程序在本地便跑不起来。
 
-![image.png](https://upload-images.jianshu.io/upload_images/14414032-fcf19846729c5bb7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-06-03-python-socks5/C5483538-5A6B-4E70-912C-3635ED3B7E54.png)
 
 这个时候，就可以用到 Pysocks 的 Monkeypatching 功能，就可以业务无感知的使用到代理，什么叫做业务无感知？就是业务完全不改代码，自己都不知道，就走了代理了。
 
-![image.png](https://upload-images.jianshu.io/upload_images/14414032-15afb4fb4b3a9940.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-06-03-python-socks5/F71F94FB-B458-441F-994A-F33B1201EB57.png)
 
 **举例**：
 
@@ -184,7 +184,7 @@ Socks5 协议是基于 TCP/IP 之上的代理协议。按照之前5层协议的�
 
 ## Socks5 协议
 
-![image.png](https://upload-images.jianshu.io/upload_images/14414032-2aa7a517df708d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-06-03-python-socks5/62069882-4477-4343-AF96-056B7741287F.png)
 
 Socks5 协议本身非常简单，分为传输数据之前，会经历两次 RTT ，四个请求：
 
@@ -311,9 +311,6 @@ METHOD字段的值可以取如下值：
 - BND.ADDR 代理服务器地址
 - BND.PORT 代理服务器端口
 
-
-
-
 # 分布式系统里要用 Socks 协议？
 
 公有云厂商考虑到机房故障域，会有多个机房，会在多个地域部署数据中心，这样线上一个机房故障，甚至某整个地域故障也能保证可用性。但这机房之间，地域之间是要通信的，中间隔着公网，一般有几个方法：
@@ -330,7 +327,7 @@ METHOD字段的值可以取如下值：
 3. Socks 代理服务器 B 一看ip，确认组件5在自己机房，于是把消息发给组件5；
 4. 组件5抽到消息之后，响应原路返回；
 
-![image.png](https://upload-images.jianshu.io/upload_images/14414032-f57c59e287710f93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![关注我公众号, 获取更多干货](https://cdn.jsdelivr.net/gh/liqingqiya/liqingqiya.github.io/images/posts/2020-06-03-python-socks5/914E0C33-D88E-4EF8-9AF6-857064DE5A36.png)
 
 这里有个点，希望大家能想通：
 
